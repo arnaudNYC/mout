@@ -1,7 +1,7 @@
 {
   "name": "@arnaudnyc/mout",
   "description": "Modular Utilities",
-  "version": "1.2.3",
+  "version": "1.2.2",
   "homepage": "http://moutjs.com/",
   "author": "Miller Medeiros <contact@millermedeiros.com> (http://blog.millermedeiros.com)",
   "contributors": [
@@ -22,7 +22,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git://github.com/mout/mout.git"
+    "url": "https://github.com/arnaudnyc/mout"
   },
   "license": "MIT",
   "bugs": {
