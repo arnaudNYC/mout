@@ -5,7 +5,8 @@ define(['./namespace'], function (namespace) {
      */
     function set(obj, prop, val){
         // prototype pollution mitigation
-        if(prop.includes('__proto__') || prop.includes('prototype') || prop.includes('constructor')) {
+        if(Object.prototype.toString.call(prop) === '[object String]' &&
+            (prop.includes('__proto__') || prop.includes('prototype') || prop.includes('constructor'))) {
             return false;
         }
         var parts = (/^(.+)\.(.+)$/).exec(prop);
