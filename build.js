@@ -136,7 +136,7 @@ function convert(destinationPath){
             // we load the index file and check if all the properties contain
             // keys to make sure module conversion worked properly this will
             // avoid npm publish mistakes like mout/mout#127
-            var index = require( _path.join('./', destinationPath, 'index') );
+            var index = require( _path.join(__dirname, destinationPath, 'index') );
             checkKeys(index, 'mout');
             for (var key in index) {
                 if (key !== 'VERSION') checkKeys(index[key], 'mout.'+ key);
